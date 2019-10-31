@@ -4,7 +4,7 @@ MAINTAINER wudimenghuan@gmail.com
 RUN \
   export DEBIAN_FRONTEND="noninteractive" && \
   apt update && apt -y upgrade && \
-  apt -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint && \
+  apt -y install build-essential wget asciidoc binutils bzip2 gawk gettext git libncurses5-dev zlib1g-dev patch unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex node-uglify gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint && \
   unset DEBIAN_FRONTEND && \
   rm -rf /var/lib/apt/lists/* 
 
